@@ -1,13 +1,13 @@
-import axios from "axios";
+import axios from 'axios'
 
 const instance = axios.create({
-  baseURL: "http://www.geekwolfman.xyz:8080",
+  baseURL: 'http://www.geekwolfman.xyz:8080',
   headers: {
     post: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
   },
-  timeout: 30000,
+  timeout: 30_000,
   transformRequest: [
     (data) => JSON.stringify(data),
     // 对 data 进行任意转换处理;
@@ -17,39 +17,39 @@ const instance = axios.create({
     // 对 data 进行任意转换处理
     (data) => JSON.parse(data),
   ],
-});
+})
 // 请求拦截器
 instance.interceptors.request.use(
   (config: any) => {
-    const newConfig = config;
+    const newConfig = config
     // 设置token
-    const token = sessionStorage.getItem("token");
+    const token = sessionStorage.getItem('token')
     // console.log(sessionStorage.getItem("token"));
 
     if (token) {
-      console.log(token === null);
-      console.log(typeof token);
-      newConfig.headers.token = token;
+      console.log(token === null)
+      console.log(typeof token)
+      newConfig.headers.token = token
     }
     newConfig.headers = Object.assign(
-      newConfig.method === "get"
+      newConfig.method === 'get'
         ? {
-            Accept: "application/json",
-            "Content-Type": "application/json; charset=UTF-8",
+            Accept: 'application/json',
+            'Content-Type': 'application/json; charset=UTF-8',
           }
         : {
-            "Content-Type": "application/json; charset=UTF-8",
+            'Content-Type': 'application/json; charset=UTF-8',
           },
-      newConfig.headers
-    );
+      newConfig.headers,
+    )
     // post设置请求拦截器
-    if (newConfig.method === "post") {
-      const contentType = newConfig.headers["Content-Type"];
+    if (newConfig.method === 'post') {
+      const contentType = newConfig.headers['Content-Type']
       // 根据Content-Type转换data格式
       if (contentType) {
-        if (contentType.includes("multipart")) {
+        if (contentType.includes('multipart')) {
           // 类型 'multipart/form-data;'
-        } else if (contentType.includes("json")) {
+        } else if (contentType.includes('json')) {
           // 类型 'application/json;'
           // newConfig.data = JSON.stringify(newConfig.data);
         } else {
@@ -59,53 +59,53 @@ instance.interceptors.request.use(
         }
       }
     }
-    return newConfig;
+    return newConfig
   },
   (error) => {
-    let { data } = error;
-    data = {};
-    data.msg = "服务器异常请联系管理员!";
-    return Promise.resolve(error);
-  }
-);
+    let { data } = error
+    data = {}
+    data.msg = '服务器异常请联系管理员!'
+    return Promise.resolve(error)
+  },
+)
 // 响应拦截器
 instance.interceptors.response.use(
   (response) => {
-    const { status, data } = response;
+    const { status, data } = response
     if (status >= 200 && status < 300) {
       if (data.flag === false) {
-        throw new Error(`${data.msg}`);
+        throw new Error(`${data.msg}`)
       }
     } else {
-      throw new Error(`网络请求错误，状态码${status}`);
+      throw new Error(`网络请求错误，状态码${status}`)
     }
 
-    console.log(response);
-    return response;
+    console.log(response)
+    return response
     // throw new Error(`网络请求错误，状态码${status}`);
   },
   (error) => {
-    const err = error;
-    console.log("cuole");
+    const error_ = error
+    console.log('cuole')
     if (error.response) {
       switch (error.response.status) {
         case 401:
-          sessionStorage.clear();
+          sessionStorage.clear()
           // window.location.replace("/login");
-          window.location.replace("/");
+          window.location.replace('/')
 
-          break;
+          break
         default:
       }
     }
-    console.log(error.response);
+    console.log(error.response)
 
-    return err.response;
+    return error_.response
     // console.log(err);
     // err.data = {};
     // err.data.msg = "请求超时或服务器异常,请检查网络或联系管理员!";
     // return Promise.resolve(err);
-  }
-);
+  },
+)
 
-export default instance;
+export default instance
