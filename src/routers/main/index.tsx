@@ -1,12 +1,16 @@
-import { NotFound } from '../../pages'
-import Login from '../../pages/login/index'
-import LoginIndex from '../../pages/login/components/loginindex'
-import RegisterCode from '../../pages/login/components/registercode'
-import RegisterPhone from '../../pages/login/components/registerphone'
-import FindPasswordPhone from '../../pages/login/components/findpasswordphone'
-import FindPasswordCode from '../../pages/login/components/findpasswordcode'
+import {
+  NotFound,
+  Home,
+  Join,
+  Login,
+  LoginIndex,
+  RegisterCode,
+  RegisterPhone,
+  FindPasswordPhone,
+  FindPasswordCode,
+  EditPassword
+} from '../../pages'
 import { Routes } from '../Typings'
-import EditPassword from '../../pages/login/components/editpassword'
 
 const routes: Routes[] = [
   {
@@ -40,9 +44,21 @@ const routes: Routes[] = [
     ],
   },
   {
+    path: '/join',
+    component: Join
+  },
+  {
+    path: '/home',
+    component: Home
+  },
+  {
     path: '/notFound',
     component: NotFound,
   },
+  {
+    path: '/',
+    component: Home
+  }
 ]
 
 export default routes
