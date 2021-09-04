@@ -1,11 +1,5 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactElement } from 'react'
 
-const NotFound:FC = ():ReactElement => {
-  return (
-    <div>
-      NotFound
-    </div>
-  );
-}
+const NotFound: FC = (): ReactElement => <div>NotFound</div>
 
-export default NotFound;
+export default NotFound
