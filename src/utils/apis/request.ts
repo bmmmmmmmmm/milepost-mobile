@@ -85,6 +85,7 @@ instance.interceptors.response.use(
     // throw new Error(`网络请求错误，状态码${status}`);
   },
   (error) => {
+    // eslint-disable-next-line no-underscore-dangle
     const error_ = error
     console.log('cuole')
     if (error.response) {
