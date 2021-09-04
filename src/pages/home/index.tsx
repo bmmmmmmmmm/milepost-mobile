@@ -1,15 +1,5 @@
-import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import routes from '../../routers/main/index'
-import HomeRoute from '../../routers'
-import Provider from '../../store/store'
+import React, { FC, ReactElement } from 'react'
 
-const Home = (props: any) => (
-  <Provider>
-    <BrowserRouter>
-      <HomeRoute routes={routes} />
-    </BrowserRouter>
-  </Provider>
-)
+const Home: FC = (): ReactElement => <div>Home</div>
 
 export default Home
