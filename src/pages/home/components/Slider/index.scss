@@ -1,0 +1,22 @@
+#slider-box{
+  width: 100vw;
+  height: 75vw;
+  background-color: #ff0000;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  #slider-show{
+    width: 800vw;
+    height: 75vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    img{
+      width: 100vw;
+      height: 75vw;
+      float: left;
+    }
+  } 
+}
