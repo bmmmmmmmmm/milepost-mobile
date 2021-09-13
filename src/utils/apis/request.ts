@@ -1,4 +1,5 @@
 import axios from 'axios'
+import swal from 'sweetalert'
 
 const instance = axios.create({
   baseURL: 'http://www.geekwolfman.xyz:8080',
@@ -74,7 +75,7 @@ instance.interceptors.response.use(
     const { status, data } = response
     if (status >= 200 && status < 300) {
       if (data.flag === false) {
-        throw new Error(`${data.msg}`)
+        swal('', `${data.msg}`, 'error', { buttons: [''] })
       }
     } else {
       throw new Error(`网络请求错误，状态码${status}`)
