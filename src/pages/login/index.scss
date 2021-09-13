@@ -1,6 +1,14 @@
+input::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #c1c5cc;
+  /* placeholder字体大小  */
+  font-size: 12px;
+}
+
 .login-wrap {
   background-color: rgba(249, 249, 249, 1);
   height: 100vh;
+  font-size: 12px;
 
   .logo-wrap {
     height: 35vh;
@@ -27,15 +35,30 @@
       width: 86vw;
       height: 6vh;
       margin: auto;
-      border: 0.1rem solid rgb(190, 190, 190);
       font-size: medium;
+      position: relative;
+
+      &::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        transform: scale(0.5);
+        transform-origin: left top;
+        box-sizing: border-box;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+      }
 
       .input-detail {
         background-color: white;
         display: block;
-        width: 75vw;
+        width: 70vw;
         height: 6vh;
         border-style: none;
+        padding-left: 5vw;
       }
     }
   }
@@ -46,7 +69,6 @@
     display: block;
     margin: auto;
     margin-top: 3vh;
-    font-size: medium;
     background-color: rgba(0, 121, 254, 1);
     color: white;
     border-style: none;
@@ -58,7 +80,7 @@
     width: 70vw;
     margin: auto;
     margin-top: 4vh;
-    font-size: small;
+    font-size: 12px;
     display: flex;
     justify-content: space-between;
     padding-left: 10vw;
@@ -69,6 +91,7 @@
 .register-wrap {
   background-color: rgba(249, 249, 249, 1);
   height: 100vh;
+  font-size: 12px;
 
   .logo-wrap {
     height: 30vh;
@@ -87,6 +110,7 @@
     height: 45vh;
 
     .input-wrap {
+      position: relative;
       background-color: white;
       display: flex;
       align-items: center;
@@ -95,34 +119,72 @@
       width: 86vw;
       height: 6vh;
       margin: auto;
-      border: 0.1rem solid rgb(190, 190, 190);
+      // border: 0.1rem solid rgb(190, 190, 190);
       font-size: medium;
+
+      &::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 600%;
+        height: 600%;
+        transform: scale(0.1666);
+        transform-origin: left top;
+        box-sizing: border-box;
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+      }
 
       .input-detail {
         background-color: white;
         display: block;
-        width: 75vw;
+        width: 70vw;
         height: 6vh;
         border-style: none;
+        padding-left: 5vw;
       }
     }
 
     .phone-code {
       background-color: white;
       display: flex;
+      width: 90vw;
+      height: 6vh;
+
+      margin: auto;
       align-items: center;
       justify-content: space-between;
-      padding-left: 4vw;
-      width: 86vw;
-      height: 6vh;
-      margin: auto;
-      border: 0.1rem solid rgb(190, 190, 190);
-      font-size: medium;
+
+      .input-wrap {
+        padding-left: 4vw;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        width: 65vw;
+        font-size: medium;
+        position: relative;
+
+        &::after {
+          content: ' ';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 600%;
+          height: 600%;
+          transform: scale(0.1666);
+          transform-origin: left top;
+          box-sizing: border-box;
+          border: 1px solid #d1d1d1;
+          border-radius: 4px;
+        }
+      }
 
       .input-detail {
         background-color: white;
         display: block;
-        width: 39vw;
+        width: 42.5vw;
+        padding-left: 5vw;
         height: 6vh;
         border-style: none;
       }
@@ -131,6 +193,7 @@
         width: 30vw;
         height: 6vh;
         border-style: none;
+        font-size: 12px;
         background-color: rgba(0, 121, 254, 1);
         color: white;
       }
@@ -155,96 +218,7 @@
     width: 70vw;
     margin: auto;
     margin-top: 4vh;
-    font-size: small;
-    padding-left: 50vw;
-  }
-}
-
-.password-wrap {
-  background-color: rgba(249, 249, 249, 1);
-  height: 100vh;
-
-  .password-top {
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: small;
-
-    .trangle {
-      border-style: solid;
-      border-width: 2.5vh 2.5vh 2.5vh 2.5vh;
-      border-color: rgba(249, 249, 249, 1) rgba(249, 249, 249, 1) rgba(249, 249, 249, 1) rgb(231, 231, 231);
-      width: 0;
-      height: 0;
-    }
-
-    .now-step {
-      height: 5vh;
-      width: 60vw;
-      padding-left: 10vw;
-      line-height: 5vh;
-      font-size: small;
-      background-color: rgb(231, 231, 231);
-      color: rgba(0, 121, 254, 1);
-    }
-
-    .other-step {
-      height: 5vh;
-      width: 54vw;
-      padding-right: 5vw;
-      line-height: 5vh;
-      font-size: small;
-      background-color: rgba(249, 249, 249, 1);
-      color: rgb(184, 184, 184);
-    }
-  }
-
-  .input-container {
-    height: 12vh;
-    margin-top: 5vh;
-
-    .input-wrap {
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: 4vw;
-      width: 86vw;
-      height: 6vh;
-      margin: auto;
-      border: 0.1rem solid rgb(190, 190, 190);
-      font-size: medium;
-
-      .input-detail {
-        background-color: white;
-        display: block;
-        width: 75vw;
-        height: 6vh;
-        border-style: none;
-      }
-    }
-  }
-
-  .password-button {
-    width: 90vw;
-    height: 6vh;
-    display: block;
-    margin: auto;
-    margin-top: 3vh;
-    font-size: medium;
-    background-color: rgba(0, 121, 254, 1);
-    color: white;
-    border-style: none;
-    border-radius: 8px;
-  }
-
-  .function-wrap {
-    height: 6vh;
-    width: 70vw;
-    margin: auto;
-    margin-top: 4vh;
-    font-size: small;
+    font-size: 12px;
     padding-left: 50vw;
   }
 }
@@ -302,13 +276,28 @@
       width: 86vw;
       height: 6vh;
       margin: auto;
-      border: 0.1rem solid rgb(190, 190, 190);
       font-size: medium;
+      position: relative;
+
+      &::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        transform: scale(0.5);
+        transform-origin: left top;
+        box-sizing: border-box;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+      }
 
       .input-detail {
         background-color: white;
         display: block;
-        width: 75vw;
+        width: 70vw;
+        padding-left: 5vw;
         height: 6vh;
         border-style: none;
       }
@@ -321,7 +310,7 @@
     display: block;
     margin: auto;
     margin-top: 3vh;
-    font-size: medium;
+    font-size: 12px;
     background-color: rgba(0, 121, 254, 1);
     color: white;
     border-style: none;
@@ -332,6 +321,7 @@
 .passwordcode-wrap {
   background-color: rgba(249, 249, 249, 1);
   height: 100vh;
+  font-size: 12px;
 
   .password-top {
     height: 5vh;
@@ -382,13 +372,28 @@
       width: 86vw;
       height: 6vh;
       margin: auto;
-      border: 0.1rem solid rgb(190, 190, 190);
       font-size: medium;
+      position: relative;
+
+      &::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        transform: scale(0.5);
+        transform-origin: left top;
+        box-sizing: border-box;
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+      }
 
       .input-detail {
         background-color: white;
         display: block;
-        width: 75vw;
+        width: 70vw;
+        padding-left: 5vw;
         height: 6vh;
         border-style: none;
       }
@@ -397,27 +402,50 @@
     .phone-code {
       background-color: white;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: 4vw;
-      width: 86vw;
+      width: 90vw;
       height: 6vh;
       margin: auto;
-      border: 0.1rem solid rgb(190, 190, 190);
-      font-size: medium;
+      align-items: center;
+      justify-content: space-between;
 
-      .input-detail {
+      .input-wrap {
+        padding-left: 4vw;
         background-color: white;
-        display: block;
-        width: 39vw;
-        height: 6vh;
-        border-style: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 56vw;
+        font-size: medium;
+        position: relative;
+
+        &::after {
+          content: ' ';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 200%;
+          height: 200%;
+          transform: scale(0.5);
+          transform-origin: left top;
+          box-sizing: border-box;
+          border: 1px solid #d1d1d1;
+          border-radius: 4px;
+        }
+
+        .input-detail {
+          background-color: white;
+          display: block;
+          width: 40vw;
+          padding-left: 5vw;
+          height: 6vh;
+          border-style: none;
+        }
       }
 
       .phonecode-button {
         width: 30vw;
         height: 6vh;
         border-style: none;
+        font-size: 12px;
         background-color: rgba(0, 121, 254, 1);
         color: white;
       }
@@ -430,7 +458,6 @@
     display: block;
     margin: auto;
     margin-top: 3vh;
-    font-size: medium;
     background-color: rgba(0, 121, 254, 1);
     color: white;
     border-style: none;
@@ -442,7 +469,7 @@
     width: 70vw;
     margin: auto;
     margin-top: 4vh;
-    font-size: small;
+    font-size: 12px;
     padding-left: 50vw;
   }
 }

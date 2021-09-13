@@ -2,28 +2,34 @@ import React, { useEffect, useState } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import swal from 'sweetalert'
 import { MobileFilled, LockFilled } from '@ant-design/icons'
+import { toBeFormData } from '../../../utils/tobeformdata'
+import connect from '../../../store/connect/index'
+import { LoginSuccess } from '../../../store/actions/loginActions'
 import Logo from '../../../assets/geekLogo.png'
 
 const LoginIndex: React.FC = (props: any) => {
-  const [username, setUsername] = useState<string>('')
-  const [password, setPassword] = useState<string>('')
+  const [Username, setUsername] = useState<string>('')
+  const [Password, setPassword] = useState<string>('')
+
+  const onFinish = async (username: string, password: string) => {
+    const formLogin = toBeFormData({ username, password }, 2)
+    props.onLoginSuccess(formLogin, props.history)
+  }
 
   const handleClick = () => {
-    if (!username) {
-      swal('注意', '请输入用户名', 'warning', {
+    if (!Username) {
+      swal('', '请输入用户名', 'warning', {
         buttons: [''],
       })
-    }
-    if (!password) {
-      swal('注意', '请输入密码', 'warning', {
+    } else if (!Password) {
+      swal('', '请输入密码', 'warning', {
         buttons: [''],
       })
+    } else {
+      onFinish(Username, Password)
     }
   }
 
-  useEffect(() => {
-    console.log(username)
-  }, [username])
   return (
     <div className="login-wrap">
       <div className="logo-wrap">
@@ -36,7 +42,7 @@ const LoginIndex: React.FC = (props: any) => {
           <input
             type="text"
             className="input-detail"
-            placeholder="&nbsp;&nbsp;手机号/学号/用户名/姓名"
+            placeholder="手机号/学号/用户名/姓名"
             onChange={(e) => {
               setUsername(e.target.value)
             }}
@@ -47,7 +53,7 @@ const LoginIndex: React.FC = (props: any) => {
           <input
             type="password"
             className="input-detail"
-            placeholder="&nbsp;&nbsp;登录密码"
+            placeholder="登录密码"
             onChange={(e) => {
               setPassword(e.target.value)
             }}
@@ -63,7 +69,7 @@ const LoginIndex: React.FC = (props: any) => {
         <Link role="none" style={{ color: '#169bd5', textDecoration: 'none' }} to="/login/registercode">
           注册新用户
         </Link>
-        <Link role="none" style={{ color: '#169bd5', textDecoration: 'none' }} to="/login/findpasswordphone">
+        <Link role="none" style={{ color: '#169bd5', textDecoration: 'none' }} to="/login/findpasswordcode">
           找回密码
         </Link>
       </div>
@@ -71,4 +77,15 @@ const LoginIndex: React.FC = (props: any) => {
   )
 }
 
-export default withRouter(LoginIndex)
+const mapStateToProps = (state: any) => {
+  console.log(state)
+  return {
+    login: state.login,
+  }
+}
+
+const mapDispatchToProps = (dispatch: any) => ({
+  onLoginSuccess: (index: any, history: { history: any }) => dispatch(LoginSuccess(index, history)),
+})
+
+export default connect({ mapStateToProps, mapDispatchToProps })(LoginIndex)
