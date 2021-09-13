@@ -1,0 +1,157 @@
+.departmentprofile-img-show {
+  #pythonbigdata-img-source1 {
+    width: 7vw;
+    top: 5vh;
+    left: 13vw; 
+    -webkit-animation: 3s pythonbigdata-source1;
+    animation: 3s pythonbigdata-source1;
+  }
+  #pythonbigdata-img-source2 {
+    width: 12vw;
+    top: 4vh;
+    right: 9vw;
+    -webkit-animation: 3s pythonbigdata-source2;
+    animation: 3s pythonbigdata-source2;
+  }
+  #pythonbigdata-img-source3 {
+    width: 15vw;
+    top: 3vh;
+    right: 35vw;
+    -webkit-animation: 3s pythonbigdata-source3;
+    animation: 3s pythonbigdata-source3;
+  }
+  #pythonbigdata-img-source4 {
+    width: 8vw;
+    top: 18vh;
+    left: 6vw;
+    -webkit-animation: 3s pythonbigdata-source4;
+    animation: 3s pythonbigdata-source4;
+  }
+  #pythonbigdata-img-source5 {
+    width:3vw;
+    top: 6vh;
+    left: 35vw;
+    -webkit-animation: departmentprofile-bg-show 3s, 2.5s 3s pythonbigdata-source5-6 infinite;
+    animation: departmentprofile-bg-show 3s, 2.5s 3s pythonbigdata-source5-6 infinite;
+  }
+  #pythonbigdata-img-source6 {
+    width:3vw;
+    top: 9vh;
+    right: 13vw;
+    -webkit-animation: departmentprofile-bg-show 3s, 2.5s 4.25s pythonbigdata-source5-6 infinite;
+    animation: departmentprofile-bg-show 3s, 2.5s 4.25s pythonbigdata-source5-6 infinite;
+  }
+}
+
+@keyframes pythonbigdata-source1 {
+  0% { 
+    left: 0;
+    opacity: 0;
+  }
+  100% { 
+    left: 13vw;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pythonbigdata-source1 {
+  0% { 
+    left: 0;
+    opacity: 0;
+  }
+  100% { 
+    left: 13vw;
+    opacity: 1;
+  }
+}
+
+@keyframes pythonbigdata-source2 {
+  0% { 
+    right: 0;
+    opacity: 0;
+  }
+  100% { 
+    right: 9vw;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pythonbigdata-source2 {
+  0% { 
+    right: 0;
+    opacity: 0;
+  }
+  100% { 
+    right: 9vw;
+    opacity: 1;
+  }
+}
+
+@keyframes pythonbigdata-source3 {
+  0% { 
+    right: 0vw;
+    opacity: 0;
+  }
+  100% { 
+    right: 35vw;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pythonbigdata-source3 {
+  0% { 
+    right: 0vw;
+    opacity: 0;
+  }
+  100% { 
+    right: 35vw;
+    opacity: 1;
+  }
+}
+
+@keyframes pythonbigdata-source4 {
+  0% { 
+    left: 0vw;
+    opacity: 0;
+  }
+  100% { 
+    left: 6vw;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pythonbigdata-source4 {
+  0% { 
+    left: 0vw;
+    opacity: 0;
+  }
+  100% { 
+    left: 6vw;
+    opacity: 1;
+  }
+}
+
+@keyframes pythonbigdata-source5-6 {
+  0% { 
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pythonbigdata-source5-6 {
+  0% { 
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+

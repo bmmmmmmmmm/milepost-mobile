@@ -1,0 +1,57 @@
+#wherewego {
+  position: relative;
+  width: 100vw;
+  height: 95vh;
+  text-align: center;
+
+  #wherewego-lefttop {
+    width: 20vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #wherewego-where {
+    width: 40vw;
+    margin-top: 10vh;
+  }
+
+  #wherewego-list {
+    position: relative;
+    background: url(../../../../assets/wherewego/小背景.png) center center no-repeat;
+    background-size: 100%;
+    width: 90vw;
+    height: 83vw;
+    margin: 10vh 0 0 5vw;
+    box-sizing: border-box;
+    // border: 1px solid #00f;
+
+    p {
+      position: absolute;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      word-wrap: break-word;
+      color: #fff;
+      width: 80%;
+      height: 70%;
+      left: 10%;
+      top: 10%;
+    }
+
+    #wherewego-littlebottpmline {
+      // box-sizing: border-box;
+      // border: 1px solid #00f;
+      width: 82%;
+      position: absolute;
+      left: 9%;
+      bottom: 5vw;
+    }
+  }
+
+  #wherewego-bottomline {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

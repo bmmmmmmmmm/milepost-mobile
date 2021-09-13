@@ -1,17 +1,41 @@
 import React, { FC, ReactElement } from 'react'
-import { Slider, Topbar } from './components'
+import {
+  Topbar,
+  Photos,
+  WhoAreWe,
+  WhatWeDid,
+  ProductOperation,
+  VisualDesign,
+  WebFrontEnd,
+  JavaService,
+  PythonBigData,
+  AndroidSmart,
+  WhereWeGo,
+  Footer
+} from './components'
 import './index.scss'
 
+
 const Home: FC = (): ReactElement => {
-  console.log('Home');
   
+  const a =1
   return (
     <div>
       <div id="home-top">
         <Topbar/>
       </div>
       <div id="home-content">
-        <Slider/>
+        <Photos/>
+        <WhoAreWe/>
+        <WhatWeDid/>
+        <ProductOperation/>
+        <VisualDesign/>
+        <WebFrontEnd/>
+        <JavaService/>
+        <PythonBigData/>
+        <AndroidSmart/>
+        <WhereWeGo/>
+        <Footer/>
       </div>
     </div>
   )
