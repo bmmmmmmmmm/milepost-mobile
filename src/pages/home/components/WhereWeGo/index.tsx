@@ -19,6 +19,7 @@ const WhereWeGo: FC = (): ReactElement =>
       </p>
       <img src={littlebottpmline} alt="littlebottpmline" id="wherewego-littlebottpmline"/>
     </div>
+    <button type='button' id="wherewego-joinus">1</button>
     <img src={bottomline} alt="bottomline" id="wherewego-bottomline"/>
   </div>
 

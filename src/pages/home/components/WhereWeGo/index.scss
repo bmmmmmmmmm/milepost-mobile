@@ -13,7 +13,7 @@
 
   #wherewego-where {
     width: 40vw;
-    margin-top: 10vh;
+    margin-top: 8vh;
   }
 
   #wherewego-list {
@@ -22,7 +22,7 @@
     background-size: 100%;
     width: 90vw;
     height: 83vw;
-    margin: 10vh 0 0 5vw;
+    margin: 8vh 0 8vh 5vw;
     box-sizing: border-box;
     // border: 1px solid #00f;
 
@@ -46,6 +46,16 @@
       left: 9%;
       bottom: 5vw;
     }
+  }
+
+  #wherewego-joinus {
+    display: block;
+    margin: 5vh auto;
+    width: 40vw;
+    height: 14.2vw;
+    color: rgba($color: #fff, $alpha: 0);
+    background: url(../../../../assets/wherewego/加入我们.png) center center no-repeat;
+    background-size: 100%;
   }
 
   #wherewego-bottomline {

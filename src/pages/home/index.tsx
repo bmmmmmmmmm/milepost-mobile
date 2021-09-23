@@ -25,7 +25,7 @@ const Home: FC = (): ReactElement => {
         <Topbar/>
       </div>
       <div id="home-content">
-        <Photos/>
+        {/* <Photos/> */}
         <WhoAreWe/>
         <WhatWeDid/>
         <ProductOperation/>
