@@ -28,7 +28,9 @@ const Photos: FC = (): ReactElement => {
         )} */}
         <div className='photo-single'>合照1</div>
         <div className='photo-single'>合照2</div>
-        <div className='photo-single'>合照2</div>
+        <div className='photo-single'>合照3</div>
+        <div className='photo-single'>合照4</div>
+        <div className='photo-single'>合照5</div>
       </ReactSwipe>
     </div>
   )

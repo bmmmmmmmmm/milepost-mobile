@@ -29,18 +29,19 @@
 
   #whatwedid-project {
     position: relative;
+
     width: 90vw;
     height: 83vw;
     margin: 8vh auto 0;
     background: url(../../../../assets/whatwedid/背景（蓝）.png) center center no-repeat;
-    background-size: 100%;
+    background-size: 95%;
 
     #whatwedid-project-top {
       width: 100%;
       #whatwedid-project-top-left {
         img {
           width: 8vw;
-          margin: 12vw 0 0 8vw;
+          margin: 10vw 0 0 10vw;
         }
 
         p {
@@ -56,7 +57,7 @@
       #whatwedid-project-top-right {
         img {
           position: absolute;
-          top: 12vw;
+          top: 10vw;
           right: 13vw;
           height: 5vw;
         }
@@ -67,14 +68,14 @@
       #whatwedid-project-content-showico {
         width: 30vw;
         position: absolute;
-        left: 8vw;
+        left: 10vw;
         top: 28vw;
       }
 
       #whatwedid-project-content-right {
         position: absolute;
         top: 27vw;
-        left: 41vw;
+        left: 45vw;
 
         #whatwedid-project-content-right-namemiddle{
           width: 30vw;

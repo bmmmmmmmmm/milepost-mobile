@@ -8,6 +8,7 @@
 
   #whoarewe-tittle {
     text-align: center;
+    margin-bottom: 5vh;
     #whoarewe-tittle-bulb{
       // margin-top: 5vh;
     }
@@ -17,7 +18,7 @@
   }
 
   #whoarewe-introduce {
-    margin: 0 auto;
+    margin: 3vh auto;
     width: 90vw;
     height: 76vw;
     background: url(../../../../assets/whoarewe/小背景.png) center center no-repeat;
@@ -38,7 +39,6 @@
     color: rgba($color: #fff, $alpha: 0);
     background: url(../../../../assets/whoarewe/加入我们.png) center center no-repeat;
     background-size: 100%;
-    margin-top: 8vh;
   }
 
   // #whoarewe-joinus:focus,
@@ -57,6 +57,6 @@
     display: block;
     width: 40vw;
     margin: 2vh auto 0 auto;
-    padding-bottom: 8vh;
+    // padding-bottom: 8vh;
   }
 }
