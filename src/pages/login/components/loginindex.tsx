@@ -6,6 +6,7 @@ import { toBeFormData } from '../../../utils/tobeformdata'
 import connect from '../../../store/connect/index'
 import { LoginSuccess } from '../../../store/actions/loginActions'
 import Logo from '../../../assets/geekLogo.png'
+import LoginHeader from './header'
 
 const LoginIndex: React.FC = (props: any) => {
   const [Username, setUsername] = useState<string>('')
@@ -32,10 +33,10 @@ const LoginIndex: React.FC = (props: any) => {
 
   return (
     <div className="login-wrap">
+      <LoginHeader name={'登录'} />
       <div className="logo-wrap">
         <img src={Logo} alt="" className="logo" />
       </div>
-
       <div className="input-container">
         <div className="input-wrap">
           <MobileFilled style={{ fontSize: '20px', color: 'rgb(190, 190, 190)' }} />

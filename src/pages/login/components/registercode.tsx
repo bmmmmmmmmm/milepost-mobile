@@ -6,6 +6,7 @@ import Logo from '../../../assets/geekLogo.png'
 import connect from '../../../store/connect'
 import { toBeFormData } from '../../../utils/tobeformdata'
 import { RegisteByCodeSuc } from '../../../store/actions/loginActions'
+import LoginHeader from './header'
 
 const RegisterCode: React.FC = (props: any) => {
   console.log(props)
@@ -66,6 +67,7 @@ const RegisterCode: React.FC = (props: any) => {
 
   return (
     <div className="register-wrap">
+      <LoginHeader name={'注册'} />
       <div className="logo-wrap">
         <img src={Logo} alt="" className="logo" />
       </div>
@@ -155,6 +157,9 @@ const RegisterCode: React.FC = (props: any) => {
       </button>
 
       <div className="function-wrap">
+        <Link role="none" style={{ color: '#169bd5', textDecoration: 'none' }} to="/login">
+          返回登录
+        </Link>
         <Link role="none" style={{ color: '#169bd5', textDecoration: 'none' }} to="/login/registerphone">
           切换成手机验证码注册
         </Link>
