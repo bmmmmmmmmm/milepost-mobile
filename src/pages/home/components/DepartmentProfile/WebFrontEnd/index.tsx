@@ -18,22 +18,31 @@ import '../index.scss'
 
 const WebFrontEnd: FC = (): ReactElement =>  {
   const bbg = useRef<any>(null)
+  const ppp = useRef<any>(null)
   document.addEventListener('scroll',()=>{
     // 屏幕高
     const clientH = document.documentElement.clientHeight;
     // 距顶部距离
-    const distancetop = bbg.current?.getBoundingClientRect().top
+    const distancetopBg = bbg.current?.getBoundingClientRect().top
     // 距底部距离
-    const distancebuttom = bbg.current?.getBoundingClientRect().top - clientH
+    const distancebuttomBg = bbg.current?.getBoundingClientRect().top - clientH
+
+    const distancetopP = ppp.current?.getBoundingClientRect().top
+    const distancebuttomP = ppp.current?.getBoundingClientRect().top - clientH
+
     if(bbg.current)
-      bbg.current.className = distancebuttom < 0 && distancetop > -0.35 * clientH ? 'departmentprofile-img-show' : 'departmentprofile-img'
+      bbg.current.className = distancebuttomBg < 0 && distancetopBg > -0.35 * clientH ? 'departmentprofile-img-show' : 'departmentprofile-img'
+    if(ppp.current)
+      ppp.current.className = distancebuttomP < 0 && distancetopP > -0.25 * clientH ? 'departmentprofile-p-show' : 'departmentprofile-p'
   })
   return(
     <div className='departmentprofile'>
       <img src={lefttop} alt="lefttop" className="departmentprofile-lefttop"/>
       <div className="departmentprofile-center">
         <img src={name} alt="name" className="departmentprofile-name"/>
-        <p>123</p>
+        <div className="departmentprofile-p" ref={ppp}>
+          <p>通过html、css、js前端三剑客以及react、vue等框架，解决网页的交互和用户体验，深入网页和浏览器的研究，探究浏览器的原理及实现。同时制作精美的小程序，完善小程序的交互过程等问题，致力于用最精良的技术，为用户带来最良好易用的网页的体验。</p>
+        </div>
       </div>
       <div className="departmentprofile-img" ref={bbg}>
         <img src={bg} alt="bg" className="departmentprofile-img-bg"/>

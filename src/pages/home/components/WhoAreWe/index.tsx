@@ -30,12 +30,12 @@ const WhoAreWe: FC = (): ReactElement => {
 
 
   // “我们是谁”
-  // 宽度vw
+  // 宽度(灯泡)vw
   const [tittleWidth, settittleWidth] = useState(9);
   // 距顶部的距离（不算top）vh
-  const [tittleTop, settittleTop] = useState(43);
-  // 介绍离“我们是谁”的距离vh
-  const [paragraphTop, setparagraphTop] = useState(50);
+  const [tittleTop, settittleTop] = useState(35);
+  // 合照离“我们是谁”的距离vh
+  const [paragraphTop, setparagraphTop] = useState(60);
 
 
   const handle=()=>{
@@ -68,8 +68,8 @@ const WhoAreWe: FC = (): ReactElement => {
       settittleWidth(9 + (7 * scrollY) / (clientH * 0.38))
     } 
     // 
-    if((15 * scrollY / 38) < 50 && settittleWidth) {
-      setparagraphTop(50 - 15 * scrollY / 38)
+    if((15 * scrollY / 38) < 60 && settittleWidth) {
+      setparagraphTop(60 - 15 * scrollY / 38)
     }
   }
 
@@ -83,9 +83,10 @@ const WhoAreWe: FC = (): ReactElement => {
       </div>
       <div style={{marginTop: `${paragraphTop}vh`}}>
         <Photos />
-        <div id="whoarewe-introduce">
+        {/* <div id="whoarewe-introduce">
           <img id="whoarewe-introduce-paragraph" src={paragraph} alt="paragraph" />
-        </div>
+        </div> */}
+        <img id="whoarewe-introduce" src={sbg} alt="paragraph" />
       </div>
       <button type='button' id="whoarewe-joinus">1</button>
       <img id="whoarewe-joinus-shadow" src={shadow} alt="shadow"/>
