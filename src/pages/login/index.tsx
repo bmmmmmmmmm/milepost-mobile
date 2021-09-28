@@ -5,11 +5,9 @@ import routes from '../../routers/main'
 import './index.scss'
 
 const Login: React.FC = (props: any) => (
-  <BrowserRouter>
-    <div>
-      <HomeRoute routes={routes[0].children} />
-    </div>
-  </BrowserRouter>
+  <div>
+    <HomeRoute routes={routes[0].children} />
+  </div>
 )
 
-export default withRouter(Login)
+export default Login

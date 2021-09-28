@@ -194,6 +194,9 @@ const RegisterPhone: React.FC = (props: any) => {
       </button>
 
       <div className="function-wrap">
+        <Link role="none" style={{ color: '#169bd5', textDecoration: 'none' }} to="/login">
+          返回登录
+        </Link>
         <Link role="none" style={{ color: '#169bd5', textDecoration: 'none' }} to="/login/registercode">
           切换成激活码注册
         </Link>

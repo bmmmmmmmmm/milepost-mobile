@@ -1,3 +1,21 @@
+.login-header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 5vh;
+
+  .header-left {
+    padding-left: 10vw;
+    margin: auto;
+    font-size: small;
+  }
+
+  .header-right {
+    float: right;
+    padding-right: 5vw;
+  }
+}
+
 input::-webkit-input-placeholder {
   /* placeholder颜色  */
   color: #c1c5cc;
@@ -37,20 +55,7 @@ input::-webkit-input-placeholder {
       margin: auto;
       font-size: medium;
       position: relative;
-
-      &::after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 200%;
-        height: 200%;
-        transform: scale(0.5);
-        transform-origin: left top;
-        box-sizing: border-box;
-        border: 1px solid #e5e5e5;
-        border-radius: 4px;
-      }
+      box-shadow: 0 -1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5, 0 1px 1px -1px #e5e5e5, -1px 0 1px -1px #e5e5e5;
 
       .input-detail {
         background-color: white;
@@ -121,22 +126,12 @@ input::-webkit-input-placeholder {
       margin: auto;
       // border: 0.1rem solid rgb(190, 190, 190);
       font-size: medium;
-
-      &::after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 600%;
-        height: 600%;
-        transform: scale(0.1666);
-        transform-origin: left top;
-        box-sizing: border-box;
-        border: 1px solid #d1d1d1;
-        border-radius: 4px;
-      }
+      box-shadow: 0 -1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5, 0 1px 1px -1px #e5e5e5, -1px 0 1px -1px #e5e5e5; //左边线
 
       .input-detail {
+        -webkit-user-select: auto !important;
+        -khtml-user-select: auto !important;
+        -moz-user-select: auto !important;
         background-color: white;
         display: block;
         width: 70vw;
@@ -164,23 +159,13 @@ input::-webkit-input-placeholder {
         width: 65vw;
         font-size: medium;
         position: relative;
-
-        &::after {
-          content: ' ';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 600%;
-          height: 600%;
-          transform: scale(0.1666);
-          transform-origin: left top;
-          box-sizing: border-box;
-          border: 1px solid #d1d1d1;
-          border-radius: 4px;
-        }
+        box-shadow: 0 -1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5, 0 1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5; //左边线
       }
 
       .input-detail {
+        -webkit-user-select: auto !important;
+        -khtml-user-select: auto !important;
+        -moz-user-select: auto !important;
         background-color: white;
         display: block;
         width: 42.5vw;
@@ -219,7 +204,10 @@ input::-webkit-input-placeholder {
     margin: auto;
     margin-top: 4vh;
     font-size: 12px;
-    padding-left: 50vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
 
@@ -278,22 +266,12 @@ input::-webkit-input-placeholder {
       margin: auto;
       font-size: medium;
       position: relative;
-
-      &::after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 200%;
-        height: 200%;
-        transform: scale(0.5);
-        transform-origin: left top;
-        box-sizing: border-box;
-        border: 1px solid #e5e5e5;
-        border-radius: 4px;
-      }
+      box-shadow: 0 -1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5, 0 1px 1px -1px #e5e5e5, -1px 0 1px -1px #e5e5e5;
 
       .input-detail {
+        -webkit-user-select: auto !important;
+        -khtml-user-select: auto !important;
+        -moz-user-select: auto !important;
         background-color: white;
         display: block;
         width: 70vw;
@@ -304,12 +282,23 @@ input::-webkit-input-placeholder {
     }
   }
 
+  .function-wrap {
+    height: 4vh;
+    width: 70vw;
+    margin: auto;
+    margin-top: 2vh;
+    font-size: 12px;
+    display: flex;
+    justify-content: end;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
   .password-button {
     width: 90vw;
     height: 6vh;
     display: block;
     margin: auto;
-    margin-top: 3vh;
     font-size: 12px;
     background-color: rgba(0, 121, 254, 1);
     color: white;
@@ -374,22 +363,12 @@ input::-webkit-input-placeholder {
       margin: auto;
       font-size: medium;
       position: relative;
-
-      &::after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 200%;
-        height: 200%;
-        transform: scale(0.5);
-        transform-origin: left top;
-        box-sizing: border-box;
-        border: 1px solid #d1d1d1;
-        border-radius: 4px;
-      }
+      box-shadow: 0 -1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5, 0 1px 1px -1px #e5e5e5, -1px 0 1px -1px #e5e5e5;
 
       .input-detail {
+        -webkit-user-select: auto !important;
+        -khtml-user-select: auto !important;
+        -moz-user-select: auto !important;
         background-color: white;
         display: block;
         width: 70vw;
@@ -416,22 +395,12 @@ input::-webkit-input-placeholder {
         width: 56vw;
         font-size: medium;
         position: relative;
-
-        &::after {
-          content: ' ';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 200%;
-          height: 200%;
-          transform: scale(0.5);
-          transform-origin: left top;
-          box-sizing: border-box;
-          border: 1px solid #d1d1d1;
-          border-radius: 4px;
-        }
+        box-shadow: 0 -1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5, 0 1px 1px -1px #e5e5e5, -1px 0 1px -1px #e5e5e5;
 
         .input-detail {
+          -webkit-user-select: auto !important;
+          -khtml-user-select: auto !important;
+          -moz-user-select: auto !important;
           background-color: white;
           display: block;
           width: 40vw;
@@ -457,7 +426,6 @@ input::-webkit-input-placeholder {
     height: 6vh;
     display: block;
     margin: auto;
-    margin-top: 3vh;
     background-color: rgba(0, 121, 254, 1);
     color: white;
     border-style: none;
@@ -465,11 +433,14 @@ input::-webkit-input-placeholder {
   }
 
   .function-wrap {
-    height: 6vh;
+    height: 4vh;
     width: 70vw;
     margin: auto;
-    margin-top: 4vh;
+    margin-top: 2vh;
     font-size: 12px;
-    padding-left: 50vw;
+    display: flex;
+    justify-content: end;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }

@@ -4,6 +4,7 @@ import { Link, withRouter, useHistory } from 'react-router-dom'
 import { MobileFilled, MailFilled, LoadingOutlined, LockFilled } from '@ant-design/icons'
 import connect from '../../../store/connect'
 import { ResetPasByNum, ResetPasGetCode } from '../../../store/actions/loginActions'
+import LoginHeader from './header'
 
 const FindpasswordCode: React.FC = (props: any) => {
   const [phone, setPhone] = useState<string>('')
@@ -67,6 +68,7 @@ const FindpasswordCode: React.FC = (props: any) => {
 
   return (
     <div>
+      <LoginHeader name={'找回密码'} />
       <div className="passwordcode-wrap" style={isIn ? { display: 'none' } : {}}>
         <div className="password-top">
           <div className="now-step">1.验证身份信息</div>
@@ -103,7 +105,11 @@ const FindpasswordCode: React.FC = (props: any) => {
             </button>
           </div>
         </div>
-
+        <div className="function-wrap">
+          <Link role="none" style={{ color: '#169bd5', textDecoration: 'none' }} to="/login">
+            返回登录
+          </Link>
+        </div>
         <button type="submit" className="login-button" onClick={handleClick}>
           下一步
         </button>
@@ -142,7 +148,11 @@ const FindpasswordCode: React.FC = (props: any) => {
             />
           </div>
         </div>
-
+        <div className="function-wrap">
+          <Link role="none" style={{ color: '#169bd5', textDecoration: 'none' }} to="/login">
+            返回登录
+          </Link>
+        </div>
         <button type="submit" className="password-button" onClick={handleEdit}>
           确认修改
         </button>
