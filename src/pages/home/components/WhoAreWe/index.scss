@@ -1,0 +1,69 @@
+#whoarewe {
+  width: 100vw;
+  // height: 178vw;
+  // height: 190vh;
+  height: 100%;
+  background: url(../../../../assets/whoarewe/背景.png);
+  background-size: 100vw;
+
+  #whoarewe-tittle {
+    text-align: center;
+    margin-bottom: 5vh;
+    #whoarewe-tittle-bulb{
+      // margin-top: 5vh;
+    }
+    #whoarewe-tittle-we{
+      margin-left: 7vw;
+    }
+  }
+
+  #whoarewe-introduce {
+    margin: 7vh 0 7vh 5vw;
+    width: 95vw;
+    // height: 76vw;
+    // height: 150vw;
+    // background: url(../../../../assets/whoarewe/小背景.png) center center no-repeat;
+    // background-size: 100%;
+    // display: flex;
+    // text-align: center;
+    // justify-content: center;
+    // align-items: center;
+
+    // #whoarewe-introduce-paragraph {
+    //   color: #fff;
+    //   width: 90%;
+    //   line-height: 8vw;
+    //   // margin-left: 5vw;
+
+    // }
+  }
+
+  #whoarewe-joinus {
+    display: block;
+    margin: 0 auto;
+    width: 40vw;
+    height: 14.3vw;
+    color: rgba($color: #fff, $alpha: 0);
+    background: url(../../../../assets/whoarewe/加入我们.png) center center no-repeat;
+    background-size: 100%;
+  }
+
+  // #whoarewe-joinus:focus,
+  // #whoarewe-joinus:active:focus,
+  // #whoarewe-joinus.active:focus,
+  // #whoarewe-joinus.focus,
+  // #whoarewe-joinus:active.focus,
+  // #whoarewe-joinus.active.focus {
+  //   outline: none;
+  //   border-color: transparent;
+  //   box-shadow:none;
+  // }
+
+
+  #whoarewe-joinus-shadow {
+    display: block;
+    width: 40vw;
+    margin: 2vh auto 0 auto;
+    // padding-bottom: 8vh;
+  }
+}
