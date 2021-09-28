@@ -23,19 +23,36 @@
     width: 90vw;
     height: 83vw;
     margin: 8vh 0 8vh 5vw;
+    // padding: 0 5vw;
     box-sizing: border-box;
     // border: 1px solid #00f;
 
     p {
+      // margin: 0 5vw;
       position: absolute;
       overflow-x: hidden;
       overflow-y: scroll;
       word-wrap: break-word;
       color: #fff;
-      width: 80%;
+      // padding: 0 20%;
+      width: 90%;
       height: 70%;
-      left: 10%;
+      left: 5%;
       top: 10%;
+
+      .wherewego-grade {
+        font-size: larger;
+      }
+
+      .wherewego-name {
+        float: left;
+        margin-left: 15%;
+      }
+
+      .wherewego-compony {
+        float: right;
+        margin-right: 15%;
+      }
     }
 
     #wherewego-littlebottpmline {
