@@ -1,3 +1,8 @@
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 .login-header {
   background-color: white;
   display: flex;
@@ -29,7 +34,7 @@ input::-webkit-input-placeholder {
   font-size: 12px;
 
   .logo-wrap {
-    height: 35vh;
+    height: 30vh;
     display: flex;
     align-items: center;
 
@@ -42,9 +47,10 @@ input::-webkit-input-placeholder {
   }
 
   .input-container {
-    height: 13vh;
+    height: 20vh;
 
     .input-wrap {
+      position: relative;
       background-color: white;
       display: flex;
       align-items: center;
@@ -53,17 +59,62 @@ input::-webkit-input-placeholder {
       width: 86vw;
       height: 6vh;
       margin: auto;
+      // border: 0.1rem solid rgb(190, 190, 190);
       font-size: medium;
-      position: relative;
-      box-shadow: 0 -1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5, 0 1px 1px -1px #e5e5e5, -1px 0 1px -1px #e5e5e5;
+      box-shadow: 0 -1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5, 0 1px 1px -1px #e5e5e5, -1px 0 1px -1px #e5e5e5; //左边线
 
       .input-detail {
+        -webkit-user-select: auto !important;
+        -khtml-user-select: auto !important;
+        -moz-user-select: auto !important;
         background-color: white;
         display: block;
         width: 70vw;
         height: 6vh;
         border-style: none;
         padding-left: 5vw;
+      }
+    }
+
+    .phone-code {
+      background-color: white;
+      display: flex;
+      width: 90vw;
+      height: 6vh;
+
+      margin: auto;
+      align-items: center;
+      justify-content: space-between;
+
+      .input-wrap {
+        padding-left: 4vw;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        width: 65vw;
+        font-size: medium;
+        position: relative;
+        box-shadow: 0 -1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5, 0 1px 1px -1px #e5e5e5, 1px 0 1px -1px #e5e5e5; //左边线
+      }
+
+      .input-detail {
+        -webkit-user-select: auto !important;
+        -khtml-user-select: auto !important;
+        -moz-user-select: auto !important;
+        background-color: white;
+        display: block;
+        width: 44vw;
+        padding-left: 3vw;
+        height: 6vh;
+      }
+
+      .phonecode-button {
+        width: 30vw;
+        height: 6vh;
+        border-style: none;
+        font-size: 12px;
+        background-color: rgba(0, 121, 254, 1);
+        color: white;
       }
     }
   }
@@ -74,6 +125,7 @@ input::-webkit-input-placeholder {
     display: block;
     margin: auto;
     margin-top: 3vh;
+    font-size: medium;
     background-color: rgba(0, 121, 254, 1);
     color: white;
     border-style: none;
@@ -81,7 +133,7 @@ input::-webkit-input-placeholder {
   }
 
   .function-wrap {
-    height: 5vh;
+    height: 6vh;
     width: 70vw;
     margin: auto;
     margin-top: 4vh;
