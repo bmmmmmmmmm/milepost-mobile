@@ -74,15 +74,23 @@
 
       #whatwedid-project-content-right {
         position: absolute;
-        top: 27vw;
+        top: 22vw;
         left: 45vw;
 
-        #whatwedid-project-content-right-namemiddle{
-          width: 30vw;
-        }
+        // #whatwedid-project-content-right-namemiddle{
+        //   width: 30vw;
+        // }
 
-        #whatwedid-project-content-right-introduce{
-          width: 40vw;
+        // #whatwedid-project-content-right-introduce{
+        //   width: 40vw;
+        // }
+
+        p {
+          width: 43vw;
+          height: 45vw;
+          // border: 1px solid black;
+          font-size: 1vw;
+          color: #eee;
         }
       }
     }
