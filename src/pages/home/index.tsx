@@ -1,6 +1,7 @@
 import React, { FC, ReactElement } from 'react'
 import {
   Topbar,
+  ToTop,
   Photos,
   WhoAreWe,
   WhatWeDid,
@@ -17,10 +18,9 @@ import './index.scss'
 
 
 const Home: FC = (): ReactElement => {
-  
-  const a =1
   return (
     <div>
+      <ToTop/>
       <div id="home-top">
         <Topbar/>
       </div>

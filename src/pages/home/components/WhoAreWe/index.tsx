@@ -82,7 +82,7 @@ const WhoAreWe: FC = (): ReactElement => {
         <img id="whoarewe-tittle-we" src={we} alt="we" style={{width: `${tittleWidth*3.54}vw`}}/>
       </div>
       <div style={{marginTop: `${paragraphTop}vh`}}>
-        <Photos />
+        {/* <Photos /> */}
         {/* <div id="whoarewe-introduce">
           <img id="whoarewe-introduce-paragraph" src={paragraph} alt="paragraph" />
         </div> */}

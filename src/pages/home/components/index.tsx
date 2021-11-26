@@ -1,5 +1,6 @@
 import Topbar from "./Topbar";
 // import Slider from "./Slider";
+import ToTop from "./ToTop";
 import Photos from "./Photos";
 import WhoAreWe from "./WhoAreWe";
 import WhatWeDid from "./WhatWeDid";
@@ -16,6 +17,7 @@ import Footer from "./Footer";
 
 export {
   Topbar,
+  ToTop,
   Photos,
   WhoAreWe,
   WhatWeDid,

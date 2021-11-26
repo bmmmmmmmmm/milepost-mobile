@@ -1,0 +1,26 @@
+#totop {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 10vw;
+  right: 5vw;
+  z-index: 100;
+  width: 13vw;
+  height: 13vw;
+  padding: 2.5vw;
+  border-radius: 50%;
+  background-color: #EEE209;
+  overflow: hidden;
+
+  svg {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+
+.totop-visible {
+  visibility: visible;
+}
+
+.totop-hidden {
+  visibility: hidden;
+}
