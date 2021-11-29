@@ -12,6 +12,7 @@ import{
   sbg,
   letter,
   statistic,
+  welcome
 } from './source'
 import './index.scss'
 
@@ -32,8 +33,12 @@ const WhoAreWe: FC = (): ReactElement => {
   // “我们是谁”
   // 宽度(灯泡)vw
   const [tittleWidth, settittleWidth] = useState(9);
+  // const [tittleWidth, settittleWidth] = useState(70);
+  const [welcomeW, setwelcomeW] = useState(70)
+
   // 距顶部的距离（不算top）vh
-  const [tittleTop, settittleTop] = useState(35);
+  // 改了，现在是间距
+  const [tittleTop, settittleTop] = useState(40);
   // 合照离“我们是谁”的距离vh
   const [paragraphTop, setparagraphTop] = useState(60);
 
@@ -51,24 +56,42 @@ const WhoAreWe: FC = (): ReactElement => {
      * TopBar高：clientH * 0.05
      */
 
-    // 合照在最上方
-    // 滚动距离小于0.75vw（合照还在视图中）（“我们是谁”仅缩小，位置不变）
+    // // 合照在最上方
+    // // 滚动距离小于0.75vw（合照还在视图中）（“我们是谁”仅缩小，位置不变）
     // if(scrollY < clientW * 0.75 && settittleWidth) {
     //   settittleWidth(17 - (7 * scrollY) / (clientW * 0.75))
     //   settittleTop(5 + scrollY * 100 / clientH)
     // } 
-    // 
+    
     // else if(((scrollY - clientW * 0.75) * 400 / clientH) < 40 && settittleWidth) {
     //   settittleTop(5 + clientW * 75 / clientH - (scrollY - clientW * 0.75) * 200 / clientH)
     //   setparagraphTop(50 - (scrollY - clientW * 0.75) * 400 / clientH)
     // }
 
-    // 合照在中间
-    if(scrollY < clientH * 0.38 && settittleWidth) {
-      settittleWidth(9 + (7 * scrollY) / (clientH * 0.38))
+    // // 合照在中间
+    // if(scrollY < clientH * 0.38 && settittleWidth) {
+    //   settittleWidth(9 + (7 * scrollY) / (clientH * 0.38))
+    // } 
+    // // 
+    // if((15 * scrollY / 38) < 60 && settittleWidth) {
+    //   setparagraphTop(60 - 15 * scrollY / 38)
+    // }
+
+    // // 产品又改了一次，还得重写，淦
+    // if(scrollY < clientH * 0.38 && settittleWidth) {
+    //   settittleWidth(70 + (25 * scrollY) / (clientH * 0.38))
+    // } 
+    // if((15 * scrollY / 38) < 60 && settittleWidth) {
+    //   setparagraphTop(60 - 15 * scrollY / 38)
+    // }
+
+    // 又改了
+    if(scrollY < clientH * 0.38 && setwelcomeW) {
+      setwelcomeW(70 + (25 * scrollY) / (clientH * 0.38));
+      settittleWidth(9 + (7 * scrollY) / (clientH * 0.38));
+      settittleTop(40 - (30 * scrollY) / (clientH * 0.38))
     } 
-    // 
-    if((15 * scrollY / 38) < 60 && settittleWidth) {
+    if((15 * scrollY / 38) < 60 && setwelcomeW) {
       setparagraphTop(60 - 15 * scrollY / 38)
     }
   }
@@ -77,6 +100,9 @@ const WhoAreWe: FC = (): ReactElement => {
 
   return(
     <div id="whoarewe" >
+      <div id="whoarewe-tittle-t" >
+        <img src={welcome} alt="paragraph" style={{width: `${welcomeW}vw`, marginLeft: `${welcomeW / 18}vw`}}/>
+      </div>
       <div id="whoarewe-tittle">
         <img id="whoarewe-tittle-bulb" src={bulb} alt="bulb" style={{width: `${tittleWidth}vw`, marginTop: `${tittleTop}vh`}}/>
         <img id="whoarewe-tittle-we" src={we} alt="we" style={{width: `${tittleWidth*3.54}vw`}}/>

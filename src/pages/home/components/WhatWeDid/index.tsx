@@ -12,6 +12,7 @@ import {
   show,
   showico,
   lefbutton,
+  logo
 } from './sourse'
 import './index.scss'
 
@@ -27,7 +28,7 @@ const WhatWeDid: FC = (): ReactElement =>{
       {/* <div id="whatwedid-project">
         <div id="whatwedid-project-top">
           <div id="whatwedid-project-top-left">
-            <img src={ico} alt="ico" />
+            <img src={logo} alt="ico" />
             <p>项目名称</p>
           </div>
           <div id="whatwedid-project-top-right">
@@ -52,7 +53,7 @@ const WhatWeDid: FC = (): ReactElement =>{
         <div id="whatwedid-project">
           <div id="whatwedid-project-top">
             <div id="whatwedid-project-top-left">
-              <img src={ico} alt="ico" />
+              <img src={logo} alt="ico" />
               <p>校园说</p>
             </div>
             <div id="whatwedid-project-top-right">
@@ -71,7 +72,7 @@ const WhatWeDid: FC = (): ReactElement =>{
         <div id="whatwedid-project">
           <div id="whatwedid-project-top">
             <div id="whatwedid-project-top-left">
-              <img src={ico} alt="ico" />
+              <img src={logo} alt="ico" />
               <p>校当网</p>
             </div>
             <div id="whatwedid-project-top-right">
@@ -90,7 +91,7 @@ const WhatWeDid: FC = (): ReactElement =>{
         <div id="whatwedid-project">
           <div id="whatwedid-project-top">
             <div id="whatwedid-project-top-left">
-              <img src={ico} alt="ico" />
+              <img src={logo} alt="ico" />
               <p>也去小程序</p>
             </div>
             <div id="whatwedid-project-top-right">
@@ -109,7 +110,7 @@ const WhatWeDid: FC = (): ReactElement =>{
         <div id="whatwedid-project">
           <div id="whatwedid-project-top">
             <div id="whatwedid-project-top-left">
-              <img src={ico} alt="ico" />
+              <img src={logo} alt="ico" />
               <p>仿真辅助系统</p>
             </div>
             <div id="whatwedid-project-top-right">
@@ -128,7 +129,7 @@ const WhatWeDid: FC = (): ReactElement =>{
         <div id="whatwedid-project">
           <div id="whatwedid-project-top">
             <div id="whatwedid-project-top-left">
-              <img src={ico} alt="ico" />
+              <img src={logo} alt="ico" />
               <p>经管实验教学系统</p>
             </div>
             <div id="whatwedid-project-top-right">
@@ -147,7 +148,7 @@ const WhatWeDid: FC = (): ReactElement =>{
         <div id="whatwedid-project">
           <div id="whatwedid-project-top">
             <div id="whatwedid-project-top-left">
-              <img src={ico} alt="ico" />
+              <img src={logo} alt="ico" />
               <p>经管毕业论文管理系统</p>
             </div>
             <div id="whatwedid-project-top-right">
@@ -166,7 +167,7 @@ const WhatWeDid: FC = (): ReactElement =>{
         <div id="whatwedid-project">
           <div id="whatwedid-project-top">
             <div id="whatwedid-project-top-left">
-              <img src={ico} alt="ico" />
+              <img src={logo} alt="ico" />
               <p>德勤石油设备网站</p>
             </div>
             <div id="whatwedid-project-top-right">
@@ -185,7 +186,7 @@ const WhatWeDid: FC = (): ReactElement =>{
         <div id="whatwedid-project">
           <div id="whatwedid-project-top">
             <div id="whatwedid-project-top-left">
-              <img src={ico} alt="ico" />
+              <img src={logo} alt="ico" />
               <p>智慧司法系统</p>
             </div>
             <div id="whatwedid-project-top-right">

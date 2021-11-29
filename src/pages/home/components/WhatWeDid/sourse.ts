@@ -9,6 +9,7 @@ import ico from '../../../../assets/whatwedid/项目图标.png'
 import show from '../../../../assets/whatwedid/项目展示.png'
 import showico from '../../../../assets/whatwedid/项目展示（图标）.png'
 import lefbutton from '../../../../assets/whatwedid/左下.png'
+import logo from '../../../../assets/whatwedid/logo.png'
 
 
 export{
@@ -23,4 +24,5 @@ export{
   show,
   showico,
   lefbutton,
+  logo
 }

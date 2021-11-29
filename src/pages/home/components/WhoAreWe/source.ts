@@ -9,6 +9,7 @@ import we from '../../../../assets/whoarewe/我们是谁.png'
 import sbg from '../../../../assets/whoarewe/小背景.png'
 import letter from '../../../../assets/whoarewe/信封.png'
 import statistic from '../../../../assets/whoarewe/仪表盘.png'
+import welcome from '../../../../assets/whoarewe/welcome.png'
 
 
 export {
@@ -23,4 +24,5 @@ export {
   sbg,
   letter,
   statistic,
+  welcome
 }
