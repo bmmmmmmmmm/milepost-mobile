@@ -12,7 +12,15 @@ import {
   show,
   showico,
   lefbutton,
-  logo
+  logo,
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7,
+  p8
 } from './sourse'
 import './index.scss'
 
@@ -61,7 +69,7 @@ const WhatWeDid: FC = (): ReactElement =>{
             </div>
           </div>
           <div id="whatwedid-project-content">
-            <img src={showico} alt="showico" id="whatwedid-project-content-showico" />
+            <img src={p1} alt="showico" id="whatwedid-project-content-showico" />
             <div id="whatwedid-project-content-right">
               {/* <img src={namemiddle} alt="namemiddle" id="whatwedid-project-content-right-namemiddle" /> */}
               {/* <img src={introduce} alt="introduce" id="whatwedid-project-content-right-introduce" /> */}
@@ -80,7 +88,7 @@ const WhatWeDid: FC = (): ReactElement =>{
             </div>
           </div>
           <div id="whatwedid-project-content">
-            <img src={showico} alt="showico" id="whatwedid-project-content-showico" />
+            <img src={p2} alt="showico" id="whatwedid-project-content-showico" />
             <div id="whatwedid-project-content-right">
               {/* <img src={namemiddle} alt="namemiddle" id="whatwedid-project-content-right-namemiddle" />
               <img src={introduce} alt="introduce" id="whatwedid-project-content-right-introduce" /> */}
@@ -99,7 +107,7 @@ const WhatWeDid: FC = (): ReactElement =>{
             </div>
           </div>
           <div id="whatwedid-project-content">
-            <img src={showico} alt="showico" id="whatwedid-project-content-showico" />
+            <img src={p3} alt="showico" id="whatwedid-project-content-showico" />
             <div id="whatwedid-project-content-right">
               {/* <img src={namemiddle} alt="namemiddle" id="whatwedid-project-content-right-namemiddle" />
               <img src={introduce} alt="introduce" id="whatwedid-project-content-right-introduce" /> */}
@@ -118,7 +126,7 @@ const WhatWeDid: FC = (): ReactElement =>{
             </div>
           </div>
           <div id="whatwedid-project-content">
-            <img src={showico} alt="showico" id="whatwedid-project-content-showico" />
+            <img src={p4} alt="showico" id="whatwedid-project-content-showico" />
             <div id="whatwedid-project-content-right">
               {/* <img src={namemiddle} alt="namemiddle" id="whatwedid-project-content-right-namemiddle" />
               <img src={introduce} alt="introduce" id="whatwedid-project-content-right-introduce" /> */}
@@ -137,7 +145,7 @@ const WhatWeDid: FC = (): ReactElement =>{
             </div>
           </div>
           <div id="whatwedid-project-content">
-            <img src={showico} alt="showico" id="whatwedid-project-content-showico" />
+            <img src={p5} alt="showico" id="whatwedid-project-content-showico" />
             <div id="whatwedid-project-content-right">
               {/* <img src={namemiddle} alt="namemiddle" id="whatwedid-project-content-right-namemiddle" />
               <img src={introduce} alt="introduce" id="whatwedid-project-content-right-introduce" /> */}
@@ -156,7 +164,7 @@ const WhatWeDid: FC = (): ReactElement =>{
             </div>
           </div>
           <div id="whatwedid-project-content">
-            <img src={showico} alt="showico" id="whatwedid-project-content-showico" />
+            <img src={p6} alt="showico" id="whatwedid-project-content-showico" />
             <div id="whatwedid-project-content-right">
               {/* <img src={namemiddle} alt="namemiddle" id="whatwedid-project-content-right-namemiddle" />
               <img src={introduce} alt="introduce" id="whatwedid-project-content-right-introduce" /> */}
@@ -175,7 +183,7 @@ const WhatWeDid: FC = (): ReactElement =>{
             </div>
           </div>
           <div id="whatwedid-project-content">
-            <img src={showico} alt="showico" id="whatwedid-project-content-showico" />
+            <img src={p7} alt="showico" id="whatwedid-project-content-showico" />
             <div id="whatwedid-project-content-right">
               {/* <img src={namemiddle} alt="namemiddle" id="whatwedid-project-content-right-namemiddle" />
               <img src={introduce} alt="introduce" id="whatwedid-project-content-right-introduce" /> */}
@@ -194,7 +202,7 @@ const WhatWeDid: FC = (): ReactElement =>{
             </div>
           </div>
           <div id="whatwedid-project-content">
-            <img src={showico} alt="showico" id="whatwedid-project-content-showico" />
+            <img src={p8} alt="showico" id="whatwedid-project-content-showico" />
             <div id="whatwedid-project-content-right">
               {/* <img src={namemiddle} alt="namemiddle" id="whatwedid-project-content-right-namemiddle" />
               <img src={introduce} alt="introduce" id="whatwedid-project-content-right-introduce" /> */}
