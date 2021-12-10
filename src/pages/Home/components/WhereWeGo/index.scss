@@ -1,0 +1,85 @@
+#wherewego {
+  position: relative;
+  width: 100vw;
+  height: 95vh;
+  text-align: center;
+
+  #wherewego-lefttop {
+    width: 20vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #wherewego-where {
+    width: 40vw;
+    margin-top: 8vh;
+  }
+
+  #wherewego-list {
+    position: relative;
+    background: url(../../../../assets/wherewego/小背景.png) center center no-repeat;
+    background-size: 100%;
+    width: 90vw;
+    height: 83vw;
+    // margin: 8vh 0 8vh 5vw;
+    margin: 12vh 0 8vh 5vw;
+    // padding: 0 5vw;
+    box-sizing: border-box;
+    // border: 1px solid #00f;
+
+    p {
+      // margin: 0 5vw;
+      position: absolute;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      word-wrap: break-word;
+      color: #fff;
+      // padding: 0 20%;
+      width: 90%;
+      height: 70%;
+      left: 5%;
+      top: 10%;
+
+      .wherewego-grade {
+        font-size: larger;
+      }
+
+      .wherewego-name {
+        float: left;
+        margin-left: 15%;
+      }
+
+      .wherewego-compony {
+        float: right;
+        margin-right: 15%;
+      }
+    }
+
+    #wherewego-littlebottpmline {
+      // box-sizing: border-box;
+      // border: 1px solid #00f;
+      width: 82%;
+      position: absolute;
+      left: 9%;
+      bottom: 5vw;
+    }
+  }
+
+  #wherewego-joinus {
+    display: block;
+    margin: 5vh auto;
+    width: 40vw;
+    height: 14.2vw;
+    color: rgba($color: #fff, $alpha: 0);
+    background: url(../../../../assets/wherewego/加入我们.png) center center no-repeat;
+    background-size: 100%;
+  }
+
+  #wherewego-bottomline {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

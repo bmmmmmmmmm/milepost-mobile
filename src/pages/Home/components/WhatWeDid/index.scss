@@ -1,0 +1,106 @@
+#whatwedid {
+  width: 100vw;
+  height: 95vh;
+  max-height: 95vh;
+  // text-align: center;
+  position: relative;
+  // background: url(../../../../assets/whatwedid/背景（蓝）.png) center center no-repeat;
+  // background-size: 100vw;
+
+  #whatwedid-top {
+    width: 100vw;
+    height: 29vw;
+    // display: block;
+    // background: url(../../../../assets/whatwedid/顶纹.png) no-repeat;
+    // background-size: 100vw;
+  }
+
+  #whatwedid-first {
+    margin: 5vh auto 0;
+    display: block;
+    width: 40vw;
+  }
+
+  #whatwedid-show {
+    margin: 0 auto;
+    display: block;
+    width: 30vw;
+  }
+
+  #whatwedid-project {
+    position: relative;
+
+    width: 90vw;
+    height: 83vw;
+    margin: 8vh auto 0;
+    background: url(../../../../assets/whatwedid/背景（蓝）.png) center center no-repeat;
+    background-size: 95%;
+
+    #whatwedid-project-top {
+      width: 100%;
+      #whatwedid-project-top-left {
+        img {
+          width: 6vw;
+          margin: 10vw 0 0 10vw;
+        }
+
+        p {
+          display: inline;
+          color: #fff;
+          font-size: 4vw;
+          position: relative;
+          left: 2vw;
+          bottom: 2vw;
+        }
+      }
+
+      #whatwedid-project-top-right {
+        img {
+          position: absolute;
+          top: 10vw;
+          right: 13vw;
+          height: 5vw;
+        }
+      }
+    }
+
+    #whatwedid-project-content {
+      #whatwedid-project-content-showico {
+        width: 30vw;
+        position: absolute;
+        left: 10vw;
+        top: 28vw;
+      }
+
+      #whatwedid-project-content-right {
+        position: absolute;
+        top: 22vw;
+        left: 45vw;
+
+        // #whatwedid-project-content-right-namemiddle{
+        //   width: 30vw;
+        // }
+
+        // #whatwedid-project-content-right-introduce{
+        //   width: 40vw;
+        // }
+
+        p {
+          width: 43vw;
+          height: 45vw;
+          // border: 1px solid black;
+          font-size: 3vw;
+          color: #eee;
+        }
+      }
+    }
+
+  }
+
+  #whatwedid-lefbutton {
+    width: 20vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
